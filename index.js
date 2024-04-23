@@ -49,7 +49,7 @@ async function runExample() {
 
     // Run the model with the input tensor
     let outputMap = await session.run([tensorX]);
-    let outputData = outputMap.get('output1');
+    let outputData = outputMap.get('pred_ort');
 
     // Display the output tensor values in the HTML
     let predictions = document.getElementById('predictions');
