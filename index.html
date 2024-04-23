@@ -25,7 +25,7 @@
                 height:300px;
         }
         h1{
-                color:green;
+                color:purple;
                 text-align:center;
         }
      
@@ -35,30 +35,124 @@
 </head>
 <body>
   
-  <h1> Wine Quality NN </h1>
+  <h1> Student Performance NN </h1>
   
   
   
   
-    <div id = "boxes1">
-         
-              
-  <input type="text" id="box1" value="38"> x1 <br/>
-  <input type="text" id="box2" value="0"> x2 <br/>
-  <input type="text" id="box3" value="300"> x3  <br/>
-  <input type="text" id="box4" value="27">x4 <br/>
-  <input type="text" id="box5" value="7" >x5 <br/>
-  <input type="text" id="box6" value="87618"> x6 <br/>
-  <input type="text" id="box7" value="0"> x7 <br/>
-  <input type="text" id="box8" value="300"> x8  <br/>
-  <input type="text" id="box9" value="27"> x9 <br/>
-  <input type="text" id="box10" value="7" > x10 <br/>
-  <input type="text" id="box11" value="87618"> x11 <br/>
+<div id="boxes1">
+ School:  <input type="checkbox" class="school" value="GP"> GP (Gabriel Pereira)
+  <input type="checkbox" class="school" value="MS"> MS (Mousinho da Silveira) <br/>
+  Sex:  <input type="checkbox" class="sex" value="0"> F (0) 
+  <input type="checkbox" class="sex" value="1"> M (1) <br/>
+  Age: <input type="text" class="age" value="0"> (15-22) <br/>
+  Address:  <input type="checkbox" class="address" value="U"> Urban
+  <input type="checkbox" class="address" value="R"> Rural <br/>  
+  Family Size:  <input type="checkbox" class="famsize" value="LE3"> ≤ 3
+  <input type="checkbox" class="famsize" value="GT3"> > 3 <br/>
+  Parents:  <input type="checkbox" class="Pstatus" value="T"> Living Together
+  <input type="checkbox" class="Pstatus" value="A"> Apart <br/>
+Mothers Education:  <select class="Medu">
+  <option value="0">None</option>
+  <option value="1">Primary Education (4th Grade)</option>
+  <option value="2">5th to 9th Grade</option>
+  <option value="3">Secondary Education</option>
+  <option value="4">Higher Education</option>
+</select>
+<br><br>
 
-    </div> 
+Fathers Education:  <select class="Fedu">
+  <option value="0">None</option>
+  <option value="1">Primary Education (4th Grade)</option>
+  <option value="2">5th to 9th Grade</option>
+  <option value="3">Secondary Education</option>
+  <option value="4">Higher Education</option>
+</select>
+<br><br>
+
+Mothers Job:  <select class="Mjob">
+  <option value="0">Teacher</option>
+  <option value="1">Health Care Related</option>
+  <option value="3">Civil Services (e.g. administrative or police)</option>
+  <option value="4">At Home</option>
+  <option value="5">Other</option>
+</select>
+<br><br>
+
+Fathers Job:  <select class="Fjob">
+  <option value="0">Services</option>
+  <option value="1">Other</option>
+  <option value="2">Services</option>
+  <option value="3">Health</option>
+  <option value="4">Teacher/At Home</option>
+</select><br><br>
+Reason to Choose School:  <select class="reason">
+  <option value="0">Close to Home</option>
+  <option value="1">School Reputation</option>
+  <option value="2">Course Preference</option>
+  <option value="3">Other</option>
+</select><br><br>
+  Guardian:  <input type="checkbox" class="guardian" value="0"> Mother
+  <input type="checkbox" class="guardian" value="1"> Father
+  <input type="checkbox" class="guardian" value="2"> Other <br/>
+Travel Time:  <select class="traveltime">
+  <option value="1">Less than 15 minutes</option>
+  <option value="2">15 to 30 minutes</option>
+  <option value="3">30 minutes to 1 hour</option>
+  <option value="4">More than 1 hour</option>
+</select><br><br>
+Study Time:  <select class="studytime">
+  <option value="1">Less than 2 hours per week</option>
+  <option value="2">2 to 5 hours per week</option>
+  <option value="3">5 to 10 hours per week</option>
+  <option value="4">More than 10 hours per week</option>
+</select><br><br>
+Failures:  <select class="failures">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4 or more</option>
+</select><br><br> 
+Extra Educational Support:  <input type="checkbox" class="schoolsup" value="0"> Yes
+  <input type="checkbox" class="schoolsup" value="1"> No<br>
+  Family Educational Support:  <input type="checkbox" class="famsup" value="0"> Yes
+  <input type="checkbox" class="famsup" value="1"> No<br>
+Extra paid classes within the course subject (Math or Portuguese)<input type="checkbox" class="paid" value="0"> Yes
+  <input type="checkbox" class="paid" value="1"> No<br>
+Extra-curricular Activities:  <input type="checkbox" class="activities" value="0"> Yes
+  <input type="checkbox" class="activities" value="1"> No<br>
+Nursery Attendance:  <input type="checkbox" class="nursery" value="0"> Yes
+<input type="checkbox" class="nursery" value="1"> No<br>
+Desire to Pursue Higher Education:  <input type="checkbox" class="higher" value="0"> Yes
+  <input type="checkbox" class="higher" value="1"> No<br>
+Internet Access at Home:  <input type="checkbox" class="internet" value="0"> Yes
+  <input type="checkbox" class="internet" value="1"> No<br>
+Romantic Relationship:  <input type="checkbox" class="romantic" value="0"> Yes
+<input type="checkbox" class="romantic" value="1"> No<br>
+Quality of Family Relationships (1 - very bad to 5 - excellent):
+<input type="number" class="famrel" min="1" max="5" value="1"><br>
+Free Time after School (1 - very low to 5 - very high):
+<input type="number" class="freetime" min="1" max="5" value="1"><br>
+Going Out with Friends (1 - very low to 5 - very high):
+<input type="number" class="goout" min="1" max="5" value="1"><br>
+Workday Alcohol Consumption (1 - very low to 5 - very high):
+<input type="number" class="Dalc" min="1" max="5" value="1"><br>
+Weekend Alcohol Consumption (1 - very low to 5 - very high):
+<input type="number" class="Walc" min="1" max="5" value="1"><br>
+Current Health Status (1 - very bad to 5 - very good):
+<input type="number" class="health" min="1" max="5" value="1"><br>
+Number of School Absences (0 to 93):
+<input type="number" class="absences" min="0" max="93" value="0"><br>
+First Period Grade (0 to 20):
+<input type="number" class="G1" min="0" max="20" value="0"><br>
+Second Period Grade (0 to 20):
+<input type="number" class="G2" min="0" max="20" value="0"><br>
+</div>
+
+
       
   <div>
-      <input style="background-color:yellow" type="button" value="Run" onclick="runExample()"/>
+      <input style="background-color:pink" type="button" value="Run" onclick="runExample()"/>
    </div>
   
 
