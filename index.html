@@ -41,112 +41,39 @@
   
   
 <div id="boxes1">
- School:  <input type="checkbox" class="school" value="GP"> GP (Gabriel Pereira)
-  <input type="checkbox" class="school" value="MS"> MS (Mousinho da Silveira) <br/>
-  Sex:  <input type="checkbox" class="sex" value="0"> F (0) 
-  <input type="checkbox" class="sex" value="1"> M (1) <br/>
-  Age: <input type="text" class="age" value="0"> (15-22) <br/>
-  Address:  <input type="checkbox" class="address" value="U"> Urban
-  <input type="checkbox" class="address" value="R"> Rural <br/>  
-  Family Size:  <input type="checkbox" class="famsize" value="LE3"> ≤ 3
-  <input type="checkbox" class="famsize" value="GT3"> > 3 <br/>
-  Parents:  <input type="checkbox" class="Pstatus" value="T"> Living Together
-  <input type="checkbox" class="Pstatus" value="A"> Apart <br/>
-Mothers Education:  <select class="Medu">
-  <option value="0">None</option>
-  <option value="1">Primary Education (4th Grade)</option>
-  <option value="2">5th to 9th Grade</option>
-  <option value="3">Secondary Education</option>
-  <option value="4">Higher Education</option>
-</select>
-<br><br>
-
-Fathers Education:  <select class="Fedu">
-  <option value="0">None</option>
-  <option value="1">Primary Education (4th Grade)</option>
-  <option value="2">5th to 9th Grade</option>
-  <option value="3">Secondary Education</option>
-  <option value="4">Higher Education</option>
-</select>
-<br><br>
-
-Mothers Job:  <select class="Mjob">
-  <option value="0">Teacher</option>
-  <option value="1">Health Care Related</option>
-  <option value="3">Civil Services (e.g. administrative or police)</option>
-  <option value="4">At Home</option>
-  <option value="5">Other</option>
-</select>
-<br><br>
-
-Fathers Job:  <select class="Fjob">
-  <option value="0">Services</option>
-  <option value="1">Other</option>
-  <option value="2">Services</option>
-  <option value="3">Health</option>
-  <option value="4">Teacher/At Home</option>
-</select><br><br>
-Reason to Choose School:  <select class="reason">
-  <option value="0">Close to Home</option>
-  <option value="1">School Reputation</option>
-  <option value="2">Course Preference</option>
-  <option value="3">Other</option>
-</select><br><br>
-  Guardian:  <input type="checkbox" class="guardian" value="0"> Mother
-  <input type="checkbox" class="guardian" value="1"> Father
-  <input type="checkbox" class="guardian" value="2"> Other <br/>
-Travel Time:  <select class="traveltime">
-  <option value="1">Less than 15 minutes</option>
-  <option value="2">15 to 30 minutes</option>
-  <option value="3">30 minutes to 1 hour</option>
-  <option value="4">More than 1 hour</option>
-</select><br><br>
-Study Time:  <select class="studytime">
-  <option value="1">Less than 2 hours per week</option>
-  <option value="2">2 to 5 hours per week</option>
-  <option value="3">5 to 10 hours per week</option>
-  <option value="4">More than 10 hours per week</option>
-</select><br><br>
-Failures:  <select class="failures">
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4 or more</option>
-</select><br><br> 
-Extra Educational Support:  <input type="checkbox" class="schoolsup" value="0"> Yes
-  <input type="checkbox" class="schoolsup" value="1"> No<br>
-  Family Educational Support:  <input type="checkbox" class="famsup" value="0"> Yes
-  <input type="checkbox" class="famsup" value="1"> No<br>
-Extra paid classes within the course subject (Math or Portuguese)<input type="checkbox" class="paid" value="0"> Yes
-  <input type="checkbox" class="paid" value="1"> No<br>
-Extra-curricular Activities:  <input type="checkbox" class="activities" value="0"> Yes
-  <input type="checkbox" class="activities" value="1"> No<br>
-Nursery Attendance:  <input type="checkbox" class="nursery" value="0"> Yes
-<input type="checkbox" class="nursery" value="1"> No<br>
-Desire to Pursue Higher Education:  <input type="checkbox" class="higher" value="0"> Yes
-  <input type="checkbox" class="higher" value="1"> No<br>
-Internet Access at Home:  <input type="checkbox" class="internet" value="0"> Yes
-  <input type="checkbox" class="internet" value="1"> No<br>
-Romantic Relationship:  <input type="checkbox" class="romantic" value="0"> Yes
-<input type="checkbox" class="romantic" value="1"> No<br>
-Quality of Family Relationships (1 - very bad to 5 - excellent):
-<input type="number" class="famrel" min="1" max="5" value="1"><br>
-Free Time after School (1 - very low to 5 - very high):
-<input type="number" class="freetime" min="1" max="5" value="1"><br>
-Going Out with Friends (1 - very low to 5 - very high):
-<input type="number" class="goout" min="1" max="5" value="1"><br>
-Workday Alcohol Consumption (1 - very low to 5 - very high):
-<input type="number" class="Dalc" min="1" max="5" value="1"><br>
-Weekend Alcohol Consumption (1 - very low to 5 - very high):
-<input type="number" class="Walc" min="1" max="5" value="1"><br>
-Current Health Status (1 - very bad to 5 - very good):
-<input type="number" class="health" min="1" max="5" value="1"><br>
-Number of School Absences (0 to 93):
-<input type="number" class="absences" min="0" max="93" value="0"><br>
-First Period Grade (0 to 20):
-<input type="number" class="G1" min="0" max="20" value="0"><br>
-Second Period Grade (0 to 20):
-<input type="number" class="G2" min="0" max="20" value="0"><br>
+School:(0(Gapriel Pereira) or 1(Mousinho da Silveria) <input type="text" id="box1" value="0"> x1 <br/>
+Sex: (0(F) or 1(M)) <input type="text" id="box2" value="0"> x2 <br/>
+Age: (15-22) <input type="text" id="box3" value="0"> x3  <br/>
+Address: (0(Urban) or 1(Rural)) <input type="text" id="box4" value="0">x4 <br/>
+Family Size: (0(>3) or 1(≤3)) <input type="text" id="box5" value="0" >x5 <br/>
+Parents: (0(Apart) or 1(Together)) <input type="text" id="box6" value="0"> x6 <br/>
+Mothers Education: (0 - None, 1 - Primary Education, 2 - 5th to 9th Grade, 3 - Secondary Education, 4 - Higher Education) <input type="text" id="box7" value="0"> x7 <br/>
+Fathers Education: (0 - None, 1 - Primary Education, 2 - 5th to 9th Grade, 3 - Secondary Education, 4 - Higher Education) <input type="text" id="box8" value="0"> x8  <br/>
+Mothers Job: (0 - At Home, 1 - Health Care, 3 - Other, 4 - Teacher, 5 - Civl Services) <input type="text" id="box9" value="0"> x9 <br/>
+Fathers Job: (0 - Civil Services, 1 - Other, 2 - Health Care, 3 - Secondary Education, 4 - Higher Education) <input type="text" id="box10" value="0"> x10 <br/>
+Reason to Choose School: <input type="text" id="box11" value="0"> x11 <br/>
+Guardian: <input type="text" id="box12" value="0"> x12 <br/>
+Travel Time: <input type="text" id="box13" value="0"> x13 <br/>
+Study Time: <input type="text" id="box14" value="0"> x14 <br/>
+Failures: <input type="text" id="box15" value="0"> x15 <br/>
+Extra Educational Support: <input type="text" id="box16" value="0"> x16 <br/>
+Family Educational Support: <input type="text" id="box17" value="0"> x17 <br/>
+Extra paid classes within the course subject: <input type="text" id="box18" value="0"> x18 <br/>
+Extra-curricular Activities: <input type="text" id="box19" value="0"> x19 <br/>
+Nursery Attendance: <input type="text" id="box20" value="0"> x20 <br/>
+Desire to Pursue Higher Education: <input type="text" id="box21" value="0"> x21 <br/>
+Internet Access at Home: <input type="text" id="box22" value="0"> x22 <br/>
+Romantic Relationship: <input type="text" id="box23" value="0"> x23 <br/>
+Quality of Family Relationships: <input type="text" id="box24" value="0"> x24 <br/>
+Free Time after School: <input type="text" id="box25" value="0"> x25 <br/>
+Going Out with Friends: <input type="text" id="box26" value="0"> x26 <br/>
+Workday Alcohol Consumption: <input type="text" id="box27" value="0"> x27 <br/>
+Weekend Alcohol Consumption: <input type="text" id="box28" value="0"> x28 <br/>
+Current Health Status: <input type="text" id="box29" value="0"> x29 <br/>
+Number of School Absences: <input type="text" id="box30" value="0"> x30 <br/>
+First Period Grade: <input type="text" id="box31" value="0"> x31 <br/>
+Second Period Grade: <input type="text" id="box32" value="0"> x32 <br/>
+Third Period Grade: <input type="text" id="box33" value="0"> x33 <br/>
 </div>
 
 
