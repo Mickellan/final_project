@@ -35,7 +35,6 @@ async function runExample() {
     x[29] = document.getElementById('box30').value;
     x[30] = document.getElementById('box31').value;
     x[31] = document.getElementById('box32').value;
-    x[32] = document.getElementById('box33').value;
 
 
     // Create a Float32Array from the input values
