@@ -36,6 +36,8 @@ async function runExample() {
     x[30] = document.getElementById('box31').value;
     x[31] = document.getElementById('box32').value;
 
+    console.log('Input values:', x);
+
 
     // Create a Float32Array from the input values
     let tensorX = new onnx.Tensor(x, 'float32', [1, 32]);
